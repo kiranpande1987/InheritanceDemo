@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<inheritancedemo:MainPage
+    xmlns:inheritancedemo="clr-namespace:InheritanceDemo"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="InheritanceDemo.SecondPage">
+  <StackLayout
+      BackgroundColor="Blue"
+      VerticalOptions="FillAndExpand"
+      HorizontalOptions="FillAndExpand"
+      Orientation="Vertical">
+
+      <Button VerticalOptions="Center"
+             HorizontalOptions="Center"
+             Text="Second Page"
+             FontSize="30"
+             TextColor="White"/>
+
+  </StackLayout>
+</inheritancedemo:MainPage>

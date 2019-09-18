@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  x:Class="InheritanceDemo.MainPage">
+  <ContentPage.ControlTemplate>
+    <ControlTemplate>
+      <StackLayout 
+        BackgroundColor="Black"
+        Spacing="0"
+        Orientation="Vertical">
+        <StackLayout.Padding>
+          <OnPlatform
+            x:TypeArguments="Thickness">
+            <On
+              Platform="iOS"
+              Value="0,35,0,0" />
+          </OnPlatform>
+        </StackLayout.Padding>
+
+          <StackLayout Orientation="Horizontal" Padding="0,7,0,7" BackgroundColor="Red">
+              <Label FontSize="Title" Text="EC30+ Genset" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="White" HorizontalOptions="FillAndExpand"/>
+          </StackLayout>
+
+        
+        <!-- Content from child pages -->
+        <ContentPresenter/>
+        <StackLayout Orientation="Horizontal" BackgroundColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand">
+              <Button FontSize="Title" Text="Tab 1" TextColor="White" BackgroundColor="Gray" HorizontalOptions="CenterAndExpand"/>
+              <Button FontSize="Title" Text="Tab 2" TextColor="White" BackgroundColor="Gray" HorizontalOptions="CenterAndExpand"/>
+              <Button FontSize="Title" Text="Tab 3" TextColor="White" BackgroundColor="Gray" HorizontalOptions="CenterAndExpand"/>
+              <Button FontSize="Title" Text="Tab 4" TextColor="White" BackgroundColor="Gray" HorizontalOptions="CenterAndExpand"/>
+          </StackLayout>
+      </StackLayout>
+    </ControlTemplate>
+  </ContentPage.ControlTemplate>
+</ContentPage>
